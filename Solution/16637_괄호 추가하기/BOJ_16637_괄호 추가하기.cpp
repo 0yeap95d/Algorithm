@@ -57,5 +57,6 @@ int main() {
 	solve(0, num, oper);
 
 	cout << ans;
+
 	return 0;
 }

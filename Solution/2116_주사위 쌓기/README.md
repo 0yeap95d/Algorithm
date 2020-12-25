@@ -1,4 +1,4 @@
-# <img src="https://d2gd6pc034wcta.cloudfront.net/tier/11.svg" width="40"> 2116: 주사위 쌓기
+# <img src="https://d2gd6pc034wcta.cloudfront.net/tier/11.svg" width="30"> 2116: 주사위 쌓기
 
 ### 문제 링크
 

@@ -16,6 +16,7 @@ int main() {
 	vector<pair<int, int>> field;
 	field.assign(6, {0, 0});
 	int maxWidth, maxHeight, ans;
+	maxWidth = maxHeight = ans = 0;
 	for (int i = 0; i < 6; i++) {
 		cin >> field[i].first >> field[i].second;
 		if (field[i].first < 3) maxWidth = max(maxWidth, field[i].second);

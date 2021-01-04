@@ -132,15 +132,6 @@ int main() {
 		cin >> L;
 		temp.assign(ice.begin(), ice.end());
 		fireStom(pow(2, L), N, { 0, 0 });
-
-		/*cout << endl;
-		for (int i = 0; i < N; i++) {
-			for (int j = 0; j < N; j++) {
-				cout << ice[i][j] << " ";
-			}
-			cout << endl;
-		}
-		cout << endl;*/
 	}
 
 	cout << sumIce() << "\n";

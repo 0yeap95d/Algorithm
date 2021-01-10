@@ -11,7 +11,7 @@ int main() {
 			cout << (i * M) + j + 1;
 			if (j != M - 1) cout << " ";
 		}
-		if (i != N - 1) cout << "\n";
+		cout << "\n";
 	}
 
 	return 0;

@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#define SIZE 101
+#define SIZE 105
 using namespace std;
 
 int N;

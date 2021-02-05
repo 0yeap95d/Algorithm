@@ -5,7 +5,7 @@ using namespace std;
 
 int N;
 ll Ans;
-stack<int> Heights, Weights;
+stack<ll> Heights, Weights;
 
 int main() {
 

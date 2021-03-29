@@ -131,17 +131,24 @@ String subStr2 = str.substring(3);		// subStr2 == "defghi"
 ### 💬 concat: 문자열 합치기
 
 ```java
+String str1 = new String("abc");
+String str2 = new String("def");
+String res = new String();
 
+str1.concat(str2);	// res == "abcdef"
+res = str1 + str2;	// res == "abcdef"
 ```
 
 - 해당 문자열 뒤에 매개변수 문자열을 서로 합침
+- 문자열 + 문자열로 같은 결과를 얻을 수 있음
 
 
 
 ### 💬 replace: 문자열 치환
 
 ```java
-
+String str = new String("abcaaa");
+str = str.replace('a', 'z');	// str == "zbczzz"
 ```
 
 - 해당 문자를 찾아 다음 문자로 변경
@@ -151,7 +158,9 @@ String subStr2 = str.substring(3);		// subStr2 == "defghi"
 ### 💬 contains: 문자열 포함
 
 ```java
-
+String str = new String("abc");
+boolean res1 = str.contains("bc");	// res1 == true
+boolean res2 = str.contains("cd");	// res2 == false
 ```
 
 - 해당 문자열이 포함되어 있는지 확인
@@ -162,7 +171,11 @@ String subStr2 = str.substring(3);		// subStr2 == "defghi"
 ### 💬 split: 문자열 분리
 
 ```java
+String str = new String("a,b,c,d,e");
+String[] str2 = new String[5];
 
+for (int i = 0; i < 5; i++) str2[i] = str.split(",")[i];
+for (int i = 0; i < 5; i++) System.out.print(str2[i]);	// abcde 출력
 ```
 
 - 문자열을 해당 문자열을 기준으로 모두 분리 (String[] 반환)
@@ -172,7 +185,8 @@ String subStr2 = str.substring(3);		// subStr2 == "defghi"
 ### 💬 trim: 문자열 공백 제거
 
 ```java
-
+String str = new String(" a b c ");
+String res = str.trim();	// res == "a b c"
 ```
 
 - 해당 문자열의 앞, 뒤의 공백을 모두 제거

@@ -19,16 +19,16 @@ public class BOJ_09177_´Ü¾î_¼¯±â {
 			for (int i = 0; i < 3; i++) {
 				word[i] = token.nextToken();
 				for (char c : word[i].toCharArray()) {
-					if (i != 2) {
-						if (map.containsKey(c)) map.put(c, map.get(c) + 1);
-						else map.put(c, 1);
-					}
-					else {
+					if (i == 2) {
 						if (map.containsKey(c)) {
 							if (map.get(c) - 1 == 0) map.remove(c);
 							else map.put(c, map.get(c) - 1);							
 						}
 						else ans = false;
+					}
+					else {
+						if (map.containsKey(c)) map.put(c, map.get(c) + 1);
+						else map.put(c, 1);
 					}
 				}
 			}
